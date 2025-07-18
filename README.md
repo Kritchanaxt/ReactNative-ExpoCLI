@@ -34,6 +34,7 @@ npm install --save-dev typescript @types/react
 
 สร้างไฟล์ tsconfig.json ในโฟลเดอร์รากของโปรเจกต์ และใส่เนื้อหาเริ่มต้นดังนี้:
 ```
+JSON
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
