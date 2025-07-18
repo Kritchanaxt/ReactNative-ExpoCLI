@@ -11,6 +11,7 @@ import {
   contactStyles,
   skillsStyles,
 } from '../styles';
+import { MailIcon, PhoneIcon, LocationIcon } from './Icons';
 
 export const NameCard = ({ person, cardStyle }: NameCardProps) => {
   const [imageError, setImageError] = React.useState(false);
@@ -85,21 +86,21 @@ export const NameCard = ({ person, cardStyle }: NameCardProps) => {
           <View style={contactStyles.contactGrid}>
             <View style={contactStyles.contactItem}>
               <View style={contactStyles.contactIconWrapper}>
-                <Text style={contactStyles.contactIcon}>📧</Text>
+                <MailIcon />
               </View>
               <Text style={contactStyles.contactText} numberOfLines={1}>{person.email}</Text>
             </View>
             
             <View style={contactStyles.contactItem}>
               <View style={contactStyles.contactIconWrapper}>
-                <Text style={contactStyles.contactIcon}>⚔️</Text>
+                <PhoneIcon />
               </View>
               <Text style={contactStyles.contactText}>{person.phone}</Text>
             </View>
             
             <View style={contactStyles.contactItem}>
               <View style={contactStyles.contactIconWrapper}>
-                <Text style={contactStyles.contactIcon}>🏰</Text>
+                <LocationIcon />
               </View>
               <Text style={contactStyles.contactText}>{person.location}</Text>
             </View>
@@ -108,7 +109,7 @@ export const NameCard = ({ person, cardStyle }: NameCardProps) => {
 
         {/* Skills Section */}
         <View style={skillsStyles.skillsSection}>
-          <Text style={skillsStyles.skillsTitle}>🤖 ความเชี่ยวชาญ ⚡</Text>
+          <Text style={skillsStyles.skillsTitle}>ความเชี่ยวชาญ</Text>
           <View style={skillsStyles.skillsGrid}>
             {person.skills.map((skill: string, index: number) => (
               <View key={index} style={[skillsStyles.skillChip]}>

@@ -17,15 +17,15 @@ export const UserIcon = ({ name }: UserIconProps) => (
 );
 
 export const MailIcon = () => (
-  <Text style={{ fontSize: 20 }}>�</Text>
+  <Text style={{ fontSize: 20 }}>📧</Text>
 );
 
 export const PhoneIcon = () => (
-  <Text style={{ fontSize: 20 }}>�</Text>
+  <Text style={{ fontSize: 20 }}>📱</Text>
 );
 
 export const LocationIcon = () => (
-  <Text style={{ fontSize: 20 }}>🌐</Text>
+  <Text style={{ fontSize: 20 }}>📍</Text>
 );
 
 export const CompanyIcon = () => (

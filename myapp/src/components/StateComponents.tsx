@@ -17,9 +17,9 @@ interface ErrorScreenProps {
 
 export const ErrorScreen = ({ error, onRetry }: ErrorScreenProps) => (
   <View style={stateStyles.errorContainer}>
-    <Text style={stateStyles.errorText}>🔴 ระบบขัดข้อง: {error} ⚡</Text>
+    <Text style={stateStyles.errorText}>🔴 ระบบขัดข้อง: {error} </Text>
     <TouchableOpacity onPress={onRetry}>
-      <Text style={stateStyles.retryText}>💻 แตะเพื่อรีบูตระบบ 🔄</Text>
+      <Text style={stateStyles.retryText}>แตะเพื่อรีบูตระบบ 🔄</Text>
     </TouchableOpacity>
   </View>
 );
@@ -27,6 +27,6 @@ export const ErrorScreen = ({ error, onRetry }: ErrorScreenProps) => (
 export const EmptyState = () => (
   <View style={stateStyles.emptyContainer}>
     <Text style={stateStyles.emptyText}>🤖 ไม่พบข้อมูลในเครือข่าย ⚡</Text>
-    <Text style={stateStyles.emptySubtext}>💻 กรุณาซิงค์ข้อมูลใหม่ 🔄</Text>
+    <Text style={stateStyles.emptySubtext}>กรุณาซิงค์ข้อมูลใหม่ 🔄</Text>
   </View>
 );
